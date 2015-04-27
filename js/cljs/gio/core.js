@@ -25,10 +25,10 @@ gio.command.register(cljs.core.constant$keyword$about,"a bit about me",(function
 return gio.command.output("Let's start with obvious, I am not good at writing...");
 }));
 gio.command.register(cljs.core.constant$keyword$github,"goto my github page",(function (opts){
-return gio.core.open_link("https://github.com/gizak");
+return gio.core.open_link("https://github.com/2hf");
 }));
 gio.command.register(cljs.core.constant$keyword$source,"view this page's source code",(function (opts){
-return gio.core.open_link("https://github.com/gizak/gizak.github.io/blob/source/src/gio/core.cljs");
+return gio.core.open_link("https://github.com/2hf/2hf.github.io/blob/source/src/gio/core.cljs");
 }));
 gio.command.register(cljs.core.constant$keyword$clear,"clear all history",(function (opts){
 gio.command.clear();
@@ -45,7 +45,7 @@ var G__16620 = cljs.core.first(cljs.core.constant$keyword$arguments.cljs$core$IF
 return (gio.core.set_bg.cljs$core$IFn$_invoke$arity$1 ? gio.core.set_bg.cljs$core$IFn$_invoke$arity$1(G__16620) : gio.core.set_bg.call(null,G__16620));
 }));
 gio.command.register(cljs.core.constant$keyword$copyright,"dump my info",(function (opts){
-gio.command.output("@copyright gizak, Jan 23 2015");
+gio.command.output("@copyright 2hf, Apr 27 2015");
 
 gio.command.output_raw("<br>");
 
