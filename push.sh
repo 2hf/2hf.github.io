@@ -5,7 +5,7 @@ TEMP=.build
 
 # clone build into temp
 rm -rf $TEMP
-git clone $REPO $TEMP --branch source --single-branch --depth 1
+git clone $REPO $TEMP --branch master --single-branch --depth 1
 
 # empty temp dir
 cd $TEMP
@@ -18,7 +18,7 @@ cp -R build/* $TEMP/
 cd $TEMP
 git add --all
 git commit -m "$1"
-git push origin source
+git push origin master
 cd -
 
 rm -rf $TEMP
