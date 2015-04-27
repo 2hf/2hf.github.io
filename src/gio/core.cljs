@@ -36,12 +36,12 @@
 
 (cmd/register :github "goto my github page"
               (fn [opts]
-                (open-link "https://github.com/gizak")))
+                (open-link "https://github.com/2hf")))
 
 
 (cmd/register :source "view this page's source code"
               (fn [opts]
-                (open-link "https://github.com/gizak/gizak.github.io/blob/source/src/gio/core.cljs")))
+                (open-link "https://github.com/2hf/2hf.github.io/blob/source/src/gio/core.cljs")))
 
 (cmd/register :clear "clear all history"
               (fn [opts] (cmd/clear) true))
@@ -60,7 +60,7 @@
 
 (cmd/register :copyright "dump my info"
               (fn [opts]
-                (cmd/output "@copyright gizak, Jan 23 2015")
+                (cmd/output "@copyright 2hf, Apr 27 2015")
                 (cmd/output-raw "<br>")
                 (cmd/output "This is supposed to be an index page. It appears as a terminal simulator because the author, gizak, has absolutely no idea how to present a landing page without boredom.")
                 (cmd/output-raw "<br>")

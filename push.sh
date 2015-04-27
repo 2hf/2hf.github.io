@@ -1,11 +1,11 @@
 #!/bin/sh
 
-REPO=https://github.com/gizak/gizak.github.io.git
+REPO=https://github.com/2hf/2hf.github.io.git
 TEMP=.build
 
 # clone build into temp
 rm -rf $TEMP
-git clone $REPO $TEMP --branch master --single-branch --depth 1
+git clone $REPO $TEMP --branch source --single-branch --depth 1
 
 # empty temp dir
 cd $TEMP
@@ -18,7 +18,7 @@ cp -R build/* $TEMP/
 cd $TEMP
 git add --all
 git commit -m "$1"
-git push origin master
+git push origin source
 cd -
 
 rm -rf $TEMP
