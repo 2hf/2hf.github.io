@@ -60,9 +60,9 @@
 
 (cmd/register :copyright "dump my info"
               (fn [opts]
-                (cmd/output "@copyright 2hf, Apr 27 2015")
+                (cmd/output "@copyright Fan Zhang, Apr 27 2015")
                 (cmd/output-raw "<br>")
-                (cmd/output "This is supposed to be an index page. It appears as a terminal simulator because the author, gizak, has absolutely no idea how to present a landing page without boredom.")
+                (cmd/output "Welcome to my personal website. It appears as a pure ClojureScript terminal simulator")
                 (cmd/output-raw "<br>")
                 (cmd/output "For more information, enter command `help` to list all available commands, type `about` to know a little bit about me and hit `source` if you are interested in this page.")
                 (cmd/output-raw "<br>")))

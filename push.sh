@@ -17,7 +17,7 @@ cd -
 cp -R build/* $TEMP/
 cd $TEMP
 git add --all
-git commit -m "$1"
+git commit -m "update rebuilt files"
 git push origin master
 cd -
 
